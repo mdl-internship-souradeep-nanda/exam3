@@ -1,13 +1,28 @@
 import React from 'react';
 import './Card.css';
 
+import externals from '../../externals.json';
+
 function Card(props) {
+  const toggleLike = () => {
+    if (props.likes === 1) {
+      fetch(`${externals.unlike}${props.id}`);
+    } else {
+      fetch(`${externals.like}${props.id}`);
+    }
+  };
+  const getFavButton = () => (
+    <button onClick={toggleLike}>
+      {props.likes === 1 ? 'YAY' : 'NAY'}
+    </button>
+  );
+
   return (
     <div className="Card">
       {props.author} <br />
       {props.name} <br />
       {props.rating} <br />
-      {props.likes === 1 ? 'YAY' : 'NAY'} <br />
+      {getFavButton()}<br />
     </div>
   );
 }

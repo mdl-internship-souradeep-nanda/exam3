@@ -12,6 +12,7 @@ function AuthorGroup(props) {
       const myKey = `book_${book.id}`;
       return (
         <Card
+          id={book.id}
           key={myKey}
           imgUrl={externals.imgurl}
           author={book.author}
