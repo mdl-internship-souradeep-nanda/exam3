@@ -1,0 +1,39 @@
+.Card{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 25px;
+  background: #fff;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    width: 200px;
+  }
+}
+
+.Card-img-wrapper{
+  width:100%;
+}
+
+.Card-img{
+  width:100%;
+  border-radius: 25px;
+}
+
+.Card-author{
+
+}
+
+.Card-name{
+
+}
+
+.Card-rating{
+
+}
+
+.Card-fav-button{
+
+}
