@@ -16,16 +16,21 @@ function NoBooksFound() {
   };
   return (
     <div className="NoBooksFound">
-      <div>
+      <div className="NoBooksFound-text">
         Oops! No books found!
       </div>
-      <div>
+      <div className="NoBooksFound-text">
         Import them now ?
       </div>
       <button
+        className="NoBooksFound-refresh-button"
         onClick={importBooks}
       >
-        <img src={refreshImg} alt="refresh" />
+        <img
+          className="NoBooksFound-refresh-img"
+          src={refreshImg}
+          alt="refresh"
+        />
       </button>
     </div>
   );
