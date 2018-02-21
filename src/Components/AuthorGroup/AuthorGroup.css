@@ -7,6 +7,10 @@
   background: #fff;
   flex: 1;
   font-size: 3em;
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: lighter;
 }
 
 .AuthorGroup-body{
