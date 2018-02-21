@@ -1,7 +1,11 @@
 import React from 'react';
 import './Card.css';
 
+import store from '../../store';
+import refreshAction from '../../Actions/RefreshAction';
+
 import externals from '../../externals.json';
+
 
 function Card(props) {
   const toggleLike = () => {
@@ -10,6 +14,7 @@ function Card(props) {
     } else {
       fetch(`${externals.like}${props.id}`);
     }
+    store.dispatch(refreshAction());
   };
   const getFavButton = () => (
     <button onClick={toggleLike}>

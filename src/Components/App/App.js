@@ -6,6 +6,8 @@ import SideBar from '../Sidebar/Sidebar';
 import NoBooksFound from '../NoBooksFound/NoBooksFound';
 import BooksPage from '../BooksPage/BooksPage';
 
+import store from '../../store';
+
 import externals from '../../externals.json';
 
 class App extends React.Component {
@@ -14,9 +16,17 @@ class App extends React.Component {
     this.state = {
       groupedBooks: [],
     };
+    store.subscribe(() => {
+      this.fetchAllData();
+    });
   }
 
   componentDidMount() {
+    this.fetchAllData();
+  }
+
+  fetchAllData = () => {
+    console.log('Fetching');
     fetch(externals.fetch)
       .then((res) => {
         res.json()
