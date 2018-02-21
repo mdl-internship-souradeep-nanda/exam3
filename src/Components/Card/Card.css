@@ -22,17 +22,26 @@
   border-radius: 25px;
 }
 
-.Card-author{
-
+.Card-info-wrapper{
+  display: flex;
+  flex-direction: column;
 }
 
 .Card-name{
-
+  font-weight: bold;
 }
 
 .Card-rating{
-
+  font-size: 1.5em;
+  font-weight: lighter;
 }
+
+.Card-author{
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
 
 .Card-fav-button-wrapper{
   height: 50px;

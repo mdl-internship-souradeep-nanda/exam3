@@ -41,14 +41,16 @@ function Card(props) {
       <div className="Card-img-wrapper">
         <img className="Card-img" src={externals.imgUrl} alt="card" />
       </div>
-      <div className="Card-author">
-        {props.author}
-      </div>
-      <div className="Card-name">
-        {props.name}
-      </div>
-      <div className="Card-rating">
-        {props.rating}
+      <div className="Card-info-wrapper">
+        <div className="Card-name">
+          {props.name}
+        </div>
+        <div className="Card-rating">
+          {props.rating}
+        </div>
+        <div className="Card-author">
+          {props.author}
+        </div>
       </div>
       <div className="Card-fav-button-wrapper">
         {getFavButton()}
