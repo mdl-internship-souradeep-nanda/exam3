@@ -12,11 +12,14 @@ import externals from '../../externals.json';
 function Card(props) {
   const toggleLike = () => {
     if (props.likes === 1) {
-      fetch(`${externals.unlike}${props.id}`);
+      fetch(`${externals.unlike}${props.id}`).then(() => {
+        store.dispatch(refreshAction());
+      });
     } else {
-      fetch(`${externals.like}${props.id}`);
+      fetch(`${externals.like}${props.id}`).then(() => {
+        store.dispatch(refreshAction());
+      });
     }
-    store.dispatch(refreshAction());
   };
   const getFavButton = () => (
     <button onClick={toggleLike}>
@@ -26,6 +29,7 @@ function Card(props) {
 
   return (
     <div className="Card">
+
       {props.author} <br />
       {props.name} <br />
       {props.rating} <br />
