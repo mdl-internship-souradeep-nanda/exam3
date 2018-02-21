@@ -20,7 +20,7 @@ function AuthorGroup(props) {
           author={book.author}
           name={book.name}
           rating={book.rating}
-          likes={book.likes}
+          likes={book.likes ? 1 : 0}
         />
       );
     });
