@@ -34,6 +34,30 @@
 
 }
 
-.Card-fav-button{
+.Card-fav-button-wrapper{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
 
+.Card-fav-button{
+  height: 50px;
+  width: 50px;
+
+  border-radius: 50px;
+}
+
+.Card-fav-icon{
+  height: 25px;
+  width: 25px;
+
+  border-radius: 50px;
+}
+
+.red{
+  background: red;
+}
+
+.grey{
+  background: grey;
 }

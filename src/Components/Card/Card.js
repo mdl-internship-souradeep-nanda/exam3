@@ -8,6 +8,7 @@ import refreshAction from '../../Actions/RefreshAction';
 
 import externals from '../../externals.json';
 
+import favouriteIcon from './favourite.svg';
 
 function Card(props) {
   const toggleLike = () => {
@@ -22,8 +23,16 @@ function Card(props) {
     }
   };
   const getFavButton = () => (
-    <button onClick={toggleLike}>
-      {props.likes === 1 ? 'YAY' : 'NAY'}
+    <button
+      className={props.likes === 1 ? 'Card-fav-button red' : 'Card-fav-button grey'}
+      onClick={toggleLike}
+    >
+      <img
+        className={props.likes === 1 ? 'Card-fav-icon red' : 'Card-fav-icon grey'}
+        src={favouriteIcon}
+        alt="favourite"
+      />
+
     </button>
   );
 
@@ -41,7 +50,7 @@ function Card(props) {
       <div className="Card-rating">
         {props.rating}
       </div>
-      <div className="Card-fav-button">
+      <div className="Card-fav-button-wrapper">
         {getFavButton()}
       </div>
     </div>
