@@ -4,7 +4,10 @@ import './Header.css';
 function Header() {
   return (
     <div className="Header">
-      The Book Shelf
+      <span className="Header-small">The</span>
+      {' Book '}
+      <span className="Header-small">Shelf</span>
+      <hr className="Header-line" />
     </div>
   );
 }
