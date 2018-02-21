@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './AuthorGroup.css';
 
 import Card from '../Card/Card';
@@ -30,5 +32,10 @@ function AuthorGroup(props) {
     </div>
   );
 }
+
+AuthorGroup.propTypes = {
+  books: PropTypes.any.isRequired, // eslint-disable-line react/forbid-prop-types
+  author: PropTypes.string.isRequired,
+};
 
 export default AuthorGroup;

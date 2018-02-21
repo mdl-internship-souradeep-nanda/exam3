@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './Card.css';
 
 import store from '../../store';
@@ -31,5 +33,13 @@ function Card(props) {
     </div>
   );
 }
+
+Card.propTypes = {
+  id: PropTypes.number.isRequired,
+  author: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
 
 export default Card;

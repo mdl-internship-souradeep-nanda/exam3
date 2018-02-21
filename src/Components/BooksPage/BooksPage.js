@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './BooksPage.css';
 import AuthorGroup from '../AuthorGroup/AuthorGroup';
 
@@ -22,5 +24,9 @@ function BooksPage(props) {
     </div>
   );
 }
+
+BooksPage.propTypes = {
+  groupedBooks: PropTypes.any.isRequired, // eslint-disable-line react/forbid-prop-types
+};
 
 export default BooksPage;
