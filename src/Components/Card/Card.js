@@ -1,10 +1,13 @@
 import React from 'react';
 import './Card.css';
 
-function Card() {
+function Card(props) {
   return (
     <div className="Card">
-      Card
+      {props.author} <br />
+      {props.name} <br />
+      {props.rating} <br />
+      {props.likes === 1 ? 'YAY' : 'NAY'} <br />
     </div>
   );
 }

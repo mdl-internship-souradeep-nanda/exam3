@@ -1,0 +1,6 @@
+{
+  "fetch": "http://localhost:8080/fetchAll",
+  "like": "http://localhost:8080/like/",
+  "unlike": "http://localhost:8080/unlike/",
+  "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg"
+}
