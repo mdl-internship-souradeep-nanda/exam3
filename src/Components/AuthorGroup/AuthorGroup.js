@@ -27,8 +27,12 @@ function AuthorGroup(props) {
   };
   return (
     <div className="AuthorGroup">
-      <h1>{props.author}</h1>
-      {populateCards()}
+      <div className="AuthorGroup-header">
+        {props.author}
+      </div>
+      <div className="AuthorGroup-body">
+        {populateCards()}
+      </div>
     </div>
   );
 }

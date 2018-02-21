@@ -1,0 +1,18 @@
+.AuthorGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+.AuthorGroup-header{
+  background: #fff;
+  flex: 1;
+  font-size: 3em;
+}
+
+.AuthorGroup-body{
+  background: rgb(234,141,77);
+  flex: 9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
