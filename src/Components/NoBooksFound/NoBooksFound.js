@@ -3,7 +3,7 @@ import './NoBooksFound.css';
 
 import externals from '../../externals.json';
 
-import refreshImg from './refresh.svg';
+import refreshImg from '../SharedMedia/refresh.svg';
 
 import store from '../../store';
 import refresh from '../../Actions/RefreshAction';

@@ -5,3 +5,47 @@
   font-size: 3em;
   text-align: center;
 }
+
+.Sidebar-inner{
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Sidebar-header{
+  flex:9;
+}
+
+.Sidebar-button-refresh{
+  background: inherit;
+  border: 0px;
+  width: 50px;
+  height: 50%;
+
+  flex: 1;
+}
+
+.Sidebar-refresh-img{
+  background: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.Sidebar-button-settings{
+  background: inherit;
+  border: 0px;
+  width: 50px;
+  height: 50%;
+
+  flex: 1;
+}
+
+.Sidebar-settings-img{
+  background: inherit;
+  width: 100%;
+  height: 100%;
+}
