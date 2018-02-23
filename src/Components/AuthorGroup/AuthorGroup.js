@@ -10,20 +10,22 @@ import externals from '../../externals.json';
 function AuthorGroup(props) {
   const populateCards = () => {
     const { books } = props;
-    return books.map((book) => {
-      const myKey = `book_${book.id}`;
-      return (
-        <Card
-          id={book.id}
-          key={myKey}
-          imgUrl={externals.imgurl}
-          author={book.author}
-          name={book.name}
-          rating={book.rating}
-          likes={book.likes ? 1 : 0}
-        />
-      );
-    });
+    return books
+      .sort((a, b) => a.id - b.id)
+      .map((book) => {
+        const myKey = `book_${book.id}`;
+        return (
+          <Card
+            id={book.id}
+            key={myKey}
+            imgUrl={externals.imgurl}
+            author={book.author}
+            name={book.name}
+            rating={book.rating}
+            likes={book.likes ? 1 : 0}
+          />
+        );
+      });
   };
   return (
     <div className="AuthorGroup">
