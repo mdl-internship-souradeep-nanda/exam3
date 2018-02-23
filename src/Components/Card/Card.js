@@ -38,18 +38,19 @@ function Card(props) {
 
   return (
     <div className="Card">
-      <div className="Card-img-wrapper">
+      <div className="Card-base-wrapper">
         <img className="Card-img" src={externals.imgUrl} alt="card" />
-      </div>
-      <div className="Card-info-wrapper">
-        <div className="Card-name">
-          {props.name}
-        </div>
-        <div className="Card-rating">
-          {props.rating}
-        </div>
-        <div className="Card-author">
-          {props.author}
+
+        <div className="Card-info-wrapper">
+          <div className="Card-name">
+            {props.name}
+          </div>
+          <div className="Card-rating">
+            {props.rating}
+          </div>
+          <div className="Card-author">
+            {props.author}
+          </div>
         </div>
       </div>
       <div className="Card-fav-button-wrapper">
