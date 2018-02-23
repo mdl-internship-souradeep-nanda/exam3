@@ -6,11 +6,12 @@
 .AuthorGroup-header{
   background: #fff;
   flex: 1;
-  font-size: 3em;
+  font-size: 2em;
+  color: rgb(140, 140, 140);
   padding: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .AuthorGroup-body{
