@@ -5,7 +5,7 @@
   font-size: 3em;
   padding-left: 5%;
   padding-right: 5%;
-  border-radius: 5%;
+  border-radius: 0 0 15px 0;
 }
 
 .Header-line{
