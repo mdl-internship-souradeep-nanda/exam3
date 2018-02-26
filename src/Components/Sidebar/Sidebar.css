@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
+  .Sidebar{
+    display: none;
+  }
+}
+
 .Sidebar-inner{
   background: rgb(49,58,71);
   display: flex;
